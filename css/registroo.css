@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #8876ca; /* Color lila de fondo */
+    text-align: center; /* Centrar contenido en el cuerpo */
+}
+
+.container {
+    background-color: #ffffff; /* Fondo blanco para el formulario */
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Sombra ligera */
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.title {
+    color: #6072ad; 
+    text-align: center;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.form input[type="text"],
+.form input[type="date"],
+.form select,
+.form textarea {
+    width: 100%;
+    padding: 50px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.submit-button {
+    background-color: #6072ad; /* Color de fondo para el botón */
+    color: white;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #3e3c99; /* Color de fondo oscuro al pasar el ratón */
+}
+
+a {
+    display: block; /* Hacer que el enlace sea un bloque */
+    margin-top: 20px; /* Espacio superior */
+    text-align: center; /* Centrar el enlace */
+    font-size: 18px; /* Tamaño de fuente opcional */
+}

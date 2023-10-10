@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Paciente</title>
+    <script src="js/GuardarLocalStorage.js"></script>
+    <link rel="stylesheet" href="css/registroo.css">
+</head>
+<body>
+    <h1>Registrar nuevo Paciente</h1>
+    <div id="form_container" class="container">
+        <form>
+            <label for="nombre">Nombre del Paciente:</label>
+            <input type="text" id="nombre" name="nombre">
+
+            <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+            <input type="text" id="fecha_nacimiento" name="fecha_nacimiento">
+
+            <label for="departamento">Departamento:</label>
+            <select id="departamento" name="departamento" onchange="cargarMunicipios()">
+                <option value="">Seleccionar Departamento</option>
+                <option value="Ahuachapán">Ahuachapán</option>
+                <option value="Cabañas">Cabañas</option>
+                <option value="Chalatenango">Chalatenango</option>
+                <option value="Cuscatlán">Cuscatlán</option>
+                <option value="La Libertad">La Libertad</option>
+                <option value="La Paz">La Paz</option>
+                <option value="La Unión">La Unión</option>
+                <option value="Morazán">Morazán</option>
+                <option value="San Miguel">San Miguel</option>
+                <option value="San Salvador">San Salvador</option>
+                <option value="San Vicente">San Vicente</option>
+                <option value="Santa Ana">Santa Ana</option>
+                <option value="Sonsonate">Sonsonate</option>
+                <option value="Usulután">Usulután</option>
+            </select>
+
+            <label for="municipio">Municipio:</label>
+            <select id="municipio" name="municipio">
+                <option value="">Seleccionar Municipio</option>
+            </select>
+
+            <label for="tipoDocumento">Tipo de Documento de Identificación:</label>
+            <input type="radio" id="dui" name="tipoDocumento" value="DUI" checked>
+            <label for="dui">DUI</label>
+            <input type="radio" id="pasaporte" name="tipoDocumento" value="Pasaporte">
+            <label for="pasaporte">Pasaporte</label>
+
+            <label for="numeroDocumento">Número de Documento:</label>
+            <input type="text" id="numeroDocumento" name="numeroDocumento">
+
+            <label for="telefono">Número de Teléfono:</label>
+            <input type="text" id="telefono" name="telefono">
+
+            <label for="motivo_consulta">Motivo de Consulta:</label>
+            <textarea id="motivo_consulta" name="motivo_consulta" rows="4"></textarea>
+
+            <input type="button" value="Registrar" onclick="javascript:SaveData()">
+        </form>
+    </div>
+    <a href="Registros.html">Ir al Registro</a>
+</body>
+</html>

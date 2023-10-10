@@ -1,0 +1,26 @@
+/* Estilos para la página principal */
+body {
+    background-color: #8876ca; /* Color de fondo lila */
+    font-family: Arial, sans-serif;
+    text-align: center; /* Alinea el texto al centro */
+    margin: 0;
+    padding: 0;
+}
+
+
+#datos_pacientes {
+    background-color: white; /* Fondo blanco para el área de datos */
+    width: 80%;
+    max-width: 600px; /* Ancho máximo del área de datos */
+    margin: 0 auto; /* Centra el área de datos horizontalmente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+a{
+    display: block; /* Hacer que el enlace sea un bloque */
+    margin-top: 20px; /* Espacio superior */
+    text-align: center; /* Centrar el enlace */
+    font-size: 18px; /* Tamaño de fuente opcional */
+}
